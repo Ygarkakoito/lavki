@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История отношений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #009688;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #009688;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #009688;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #009688;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #009688;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #009688 transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .content img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .container::before {
+                left: 60px;
+                border: medium solid #009688;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #009688 transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>7 декабря 2023</h2>
+                <p>Мы начали переписываться в Zoe(боже спасибо ему)</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>13 декабря 2023</h2>
+                <p>Нереально пошли в дом который выпить сидра(который потом оказался на мне). мне ни с кем так комфортно с первого дня знакомства не было.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Декабрь 2023</h2>
+                <p>Как будто это так давно было. Гуляли по морозу на речном(нереально ты колесо и сальтухи в снег крутила), в центре. С кайфом проводили время. Я нереально начала влюбляться.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>1 января 2024</h2>
+                <p>Я написала что ты мне нравишься, да я хотела об этом сообщить даже если это было очевидно.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>5 января 2024</h2>
+                <p>Забавно что ты не верила что я приеду к тебе на дачу. Болтали на втором этаже, ты взяла меня за руку, я так не хотела уезжать и отпускать твою руку.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>19 января 2024</h2>
+                <p>Сходили в кино, а потом ты предложила встречаться(слава богу, а то я так никогда бы не предложила, хотя оч хотела это сделать).</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>20 января 2024</h2>
+                <p>Сидели у меня дома, смотрели Шрека, обнимались. Очень милый день, я так не хотела чтобы ты уезжала.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>27 января 2024</h2>
+                <p>Целовались у тебя на кухне, я такая счастливая от тебя ушла.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>31 января 2024</h2>
+                <p>Ты сказала что любишь меня. И я кошка люблю тебя, всегда буду любить!</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>14 февраля 2024</h2>
+                <p>Первое 14 февраля совместное, нереально милый вечер у нас был, я так ценю каждую секунду с тобой.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Февраль-Март 2024</h2>
+                <p>Постоянно были вместе у тебя дома, я так скучаю по вечерам со всей твоей семьей.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>Апрель 2024</h2>
+                <p>Мы гуляли, проводили время вместе. Мы не виделись в апреле всего 5 дней. Делали шоколадную колбасу, рисовали картину, пили с моими друзьями, я так люблю с тобой время проводить.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>Май 2024</h2>
+                <p>Мы жили вместе. Я так хочу съехаться жить вместе, это моя мечта. Болели вместе, я пряталась от твоих родственников на даче. Нереально взяла больничный чтобы побольше времени с тобой провести.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>Июнь 2024</h2>
+                <p>Готовились к экзаменам, начали выполнять список, насыщенный месяц. Я так рада что мы вместе время проводим.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>13 июня 2024</h2>
+                <p>Нереально встретили твой день рождения!!!</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>Июль 2024</h2>
+                <p>Умирали вместе от жары, ездили к тебе на дачу, ездили на ысыах.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>19 июня 2024</h2>
+                <p>Отмечаем полгода вместе, я надеюсь что мы будем всю жизнь вместе!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
